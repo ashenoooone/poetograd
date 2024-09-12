@@ -3,7 +3,7 @@ import { LinkProps as NextLinkProps } from "next/link";
 import NextLink from "next/link";
 import { ReactNode } from "react";
 
-type LinkProps = {
+export type LinkProps = {
   className?: string;
   children?: ReactNode;
 } & NextLinkProps;

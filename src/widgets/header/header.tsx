@@ -1,7 +1,7 @@
 import { routerConfig } from "@/shared/configs/router-config";
 import { Link } from "@/shared/ui/link";
+import { Logo } from "@/shared/ui/logo";
 import { cn } from "@/shared/utils";
-import { PenTool } from "lucide-react";
 
 type HeaderProps = {
   className?: string;
@@ -12,7 +12,7 @@ export const Header = (props: HeaderProps) => {
   return (
     <header className={cn("p-2", className)}>
       <div className="bg-primary rounded-xl p-4 text-secondary flex items-center gap-10">
-        <PenTool />
+        <Logo asLink href={routerConfig.main} />
         <nav className="flex gap-4 font-bold">
           <Link href={routerConfig.main}>Главная</Link>
           <Link href={routerConfig.main}>О нас</Link>
