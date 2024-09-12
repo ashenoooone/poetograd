@@ -8,7 +8,12 @@ type PageProps = {
 export const Page = (props: PageProps) => {
   const { className, children } = props;
   return (
-    <div className={cn("flex flex-col gap-4 px-6 max-w-[1024px]", className)}>
+    <div
+      className={cn(
+        "flex flex-col gap-4 px-6 py-8 w-full max-w-content",
+        className
+      )}
+    >
       {children}
     </div>
   );
